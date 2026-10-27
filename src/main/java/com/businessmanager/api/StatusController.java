@@ -6,9 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StatusController {
 
-    @GetMapping("/api/status")
-    public String getStatus() {
-        return "Business Manager API funcionando correctamente";
+    @GetMapping("/api/clients/1")
+    public Client getClient() {
+        return new Client("Carlos", "Carlos@exemple.com");
+        
     }
 }
 
